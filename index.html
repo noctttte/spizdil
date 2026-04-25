@@ -6,11 +6,58 @@
 <title>NOCTERA STORE</title>
 
 <style>
+/* Базовый фон */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #0d0d0d;
   color: white;
+  overflow-x: hidden;
+}
+
+/* Пятно 1 */
+body::before {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+  top: 10%;
+  left: 10%;
+  animation: move1 20s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+/* Пятно 2 */
+body::after {
+  content: "";
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04), transparent 70%);
+  bottom: 10%;
+  right: 10%;
+  animation: move2 25s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+/* Анимации */
+@keyframes move1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(150px, 100px);
+  }
+}
+
+@keyframes move2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-150px, -120px);
+  }
 }
 
 header {
@@ -21,6 +68,13 @@ header {
   letter-spacing: 2px;
 }
 
+header, .hero, .products, footer {
+  position: relative;
+  z-index: 1;
+}
+
+rgba(255,255,255,0.06)
+  
 .hero {
   text-align: center;
   padding: 40px 20px;
