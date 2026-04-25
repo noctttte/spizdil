@@ -6,7 +6,7 @@
 <title>NOCTERA STORE</title>
 
 <style>
-/* Базовый фон */
+/* БАЗА */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,51 +15,51 @@ body {
   overflow-x: hidden;
 }
 
-/* Пятно 1 */
+/* АНИМИРОВАННЫЙ ФОН */
 body::before {
   content: "";
   position: fixed;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(255,255,255,0.06), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.15), transparent 70%);
   top: 10%;
   left: 10%;
-  animation: move1 20s infinite alternate ease-in-out;
+  animation: move1 35s infinite alternate ease-in-out;
   z-index: -1;
+  filter: blur(60px);
 }
 
-/* Пятно 2 */
 body::after {
   content: "";
   position: fixed;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(255,255,255,0.04), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 0, 150, 0.15), transparent 70%);
   bottom: 10%;
   right: 10%;
-  animation: move2 25s infinite alternate ease-in-out;
+  animation: move2 40s infinite alternate ease-in-out;
   z-index: -1;
+  filter: blur(60px);
 }
 
-/* Анимации */
+/* ДВИЖЕНИЕ */
 @keyframes move1 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(150px, 100px);
-  }
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(150px, 100px); }
 }
 
 @keyframes move2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-150px, -120px);
-  }
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-150px, -120px); }
 }
 
+/* ЧТОБЫ КОНТЕНТ БЫЛ ПОВЕРХ */
+header, .hero, .products, footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* HEADER */
 header {
   text-align: center;
   padding: 20px;
@@ -68,13 +68,7 @@ header {
   letter-spacing: 2px;
 }
 
-header, .hero, .products, footer {
-  position: relative;
-  z-index: 1;
-}
-
-rgba(255,255,255,0.06)
-  
+/* HERO */
 .hero {
   text-align: center;
   padding: 40px 20px;
@@ -84,6 +78,7 @@ rgba(255,255,255,0.06)
   width: 300px;
 }
 
+/* КНОПКИ */
 .btn {
   margin-top: 20px;
   display: inline-block;
@@ -95,6 +90,7 @@ rgba(255,255,255,0.06)
   border-radius: 5px;
 }
 
+/* ТОВАРЫ */
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
@@ -117,6 +113,7 @@ rgba(255,255,255,0.06)
   margin: 10px 0;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -130,7 +127,7 @@ footer {
 <header>NOCTERA STORE</header>
 
 <section class="hero">
-  <img src="https://via.placeholder.com/300" alt="">
+  <img src="size.jpg" alt="">
   <br>
   <a href="#products" class="btn">SHOP NOW</a>
 </section>
