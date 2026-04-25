@@ -64,13 +64,40 @@ body::after {
   letter-spacing: 6px;
   text-align: center;
 }
+
+  /* КОНТЕЙНЕР */
+.container {
+  text-align: center;
+  z-index: 1;
+}
+
+/* КНОПКА */
+.enter-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+/* ХОВЕР */
+.enter-btn:hover {
+  background: white;
+  color: black;
+}
+  
 </style>
 </head>
 
 <body>
 
-<div class="title">
-  NOCTERA STORE
+<div class="container">
+  <div class="title">NOCTERA STORE</div>
+
+  <a href="#shop" class="enter-btn">ENTER STORE</a>
 </div>
 
 </body>
