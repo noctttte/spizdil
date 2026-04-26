@@ -53,7 +53,7 @@ body::after {
   100% { transform: translate(-200px, -150px); }
 }
 
-
+/* КОНТЕЙНЕР (первый экран) */
 .container {
   height: 100vh;
   display: flex;
@@ -61,6 +61,7 @@ body::after {
   justify-content: center;
   align-items: center;
 }
+
 /* НАЗВАНИЕ */
 .title {
   font-size: 48px;
@@ -69,13 +70,7 @@ body::after {
   text-align: center;
 }
 
-  /* КОНТЕЙНЕР */
-.container {
-  text-align: center;
-  z-index: 1;
-}
-
-/* КНОПКА */
+/* КНОПКА ENTER */
 .enter-btn {
   display: inline-block;
   margin-top: 30px;
@@ -87,16 +82,12 @@ body::after {
   transition: 0.3s;
 }
 
-
-  
-/* ХОВЕР */
 .enter-btn:hover {
   background: white;
   color: black;
 }
 
-
-/* СЕКЦИЯ */
+/* СЕКЦИЯ МАГАЗИНА */
 .shop {
   min-height: 100vh;
   display: flex;
@@ -131,7 +122,7 @@ body::after {
   margin-bottom: 20px;
 }
 
-/* КНОПКА */
+/* КНОПКА BUY */
 .btn {
   padding: 12px 25px;
   border: 1px solid white;
@@ -144,18 +135,18 @@ body::after {
   background: white;
   color: black;
 }
-  
 </style>
 </head>
 
 <body>
 
+<!-- ПЕРВЫЙ ЭКРАН -->
 <div class="container">
   <div class="title">NOCTERA STORE</div>
-
   <a href="#shop" class="enter-btn">ENTER STORE</a>
 </div>
-  
+
+<!-- СЕКЦИЯ С ТОВАРОМ -->
 <section id="shop" class="shop">
 
   <div class="product">
@@ -176,6 +167,6 @@ body::after {
   </div>
 
 </section>
-  
+
 </body>
 </html>
