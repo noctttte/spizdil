@@ -27,6 +27,7 @@ body::before {
   animation: move1 30s infinite alternate ease-in-out;
   filter: blur(80px);
   z-index: -1;
+  pointer-events: none; /* ВОТ ЭТО ДОБАВЬ */
 }
 
 body::after {
@@ -40,8 +41,8 @@ body::after {
   animation: move2 35s infinite alternate ease-in-out;
   filter: blur(80px);
   z-index: -1;
+  pointer-events: none; /* И СЮДА */
 }
-
 /* ДВИЖЕНИЕ */
 @keyframes move1 {
   0% { transform: translate(0, 0); }
