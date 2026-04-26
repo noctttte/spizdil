@@ -83,8 +83,81 @@ body::after {
   transition: 0.3s;
 }
 
+
+<section id="shop" class="shop">
+
+  <div class="product">
+
+    <img src="images/black-hoodie.jpg" class="product-img">
+
+    <div class="product-info">
+      <h2>Black Hoodie</h2>
+      <p class="price">$49</p>
+
+      <p class="desc">
+        Minimal hoodie. Clean design. Premium quality.
+      </p>
+
+      <a href="#" class="btn">BUY NOW</a>
+    </div>
+
+  </div>
+
+</section>
+
+  
 /* ХОВЕР */
 .enter-btn:hover {
+  background: white;
+  color: black;
+}
+
+
+/* СЕКЦИЯ */
+.shop {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ПРОДУКТ */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* КАРТИНКА */
+.product-img {
+  width: 350px;
+}
+
+/* ТЕКСТ */
+.product-info {
+  max-width: 300px;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.desc {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+/* КНОПКА */
+.btn {
+  padding: 12px 25px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
   background: white;
   color: black;
 }
