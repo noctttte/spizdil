@@ -188,53 +188,62 @@ body::after {
 <!-- СЕКЦИЯ С ТОВАРОМ -->
 <section id="shop" class="shop">
 
-  <div class="product">
+  <div class="products-grid">
 
-  <img id="main-img" src="images/black-hoodie.jpg" class="product-img">
+    <!-- ТОВАР 1 -->
+    <div class="product">
 
-  <div class="product-info">
+      <img id="img1" src="images/black-hoodie.jpg" class="product-img">
 
-    <!-- ЦВЕТА (СВЕРХУ) -->
-    <div class="colors">
-      <span onclick="changeColor('black')" style="background:#000"></span>
-      <span onclick="changeColor('white')" style="background:#fff; border:1px solid #ccc"></span>
-      <span onclick="changeColor('pink')" style="background:#ff4da6"></span>
+      <div class="product-info">
+
+        <div class="colors">
+          <span onclick="changeColor(1, 'black')" style="background:#000"></span>
+          <span onclick="changeColor(1, 'white')" style="background:#fff; border:1px solid #ccc"></span>
+          <span onclick="changeColor(1, 'pink')" style="background:#ff4da6"></span>
+        </div>
+
+        <h2>Hoodie V1</h2>
+        <p class="price">$49</p>
+
+        <div class="sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+
+        <a href="#" class="btn">BUY NOW</a>
+
+      </div>
     </div>
 
-    <!-- НАЗВАНИЕ -->
-    <h2>Hoodie</h2>
+    <!-- ТОВАР 2 -->
+    <div class="product">
 
-    <p class="price">$49</p>
+      <img id="img2" src="images/black-hoodie.jpg" class="product-img">
 
-    <!-- РАЗМЕРЫ -->
-    <div class="sizes">
-      <span>S</span>
-      <span>M</span>
-      <span>L</span>
-      <span>XL</span>
-    </div>
+      <div class="product-info">
 
-    <p class="desc">
-      Minimal hoodie. Clean design. Premium quality.
-    </p>
+        <div class="colors">
+          <span onclick="changeColor(2, 'black')" style="background:#000"></span>
+          <span onclick="changeColor(2, 'white')" style="background:#fff; border:1px solid #ccc"></span>
+          <span onclick="changeColor(2, 'pink')" style="background:#ff4da6"></span>
+        </div>
 
-    <a href="#" class="btn">BUY NOW</a>
+        <h2>Hoodie V2</h2>
+        <p class="price">$49</p>
 
-  </div>
+        <div class="sizes">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
 
-</div>
+        <a href="#" class="btn">BUY NOW</a>
 
-    <img src="black.jpg" class="product-img">
-
-    <div class="product-info">
-      <h2>Black Hoodie</h2>
-      <p class="price">$49</p>
-
-      <p class="desc">
-        Minimal hoodie. Clean design. Premium quality.
-      </p>
-
-      <a href="#" class="btn">BUY NOW</a>
+      </div>
     </div>
 
   </div>
