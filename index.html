@@ -151,6 +151,25 @@ body::after {
   transition: 0.3s;
 }
 
+  /* РАЗМЕРЫ */
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.sizes span {
+  padding: 6px 10px;
+  border: 1px solid #555;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.sizes span:hover {
+  border: 1px solid white;
+}
+
 .btn:hover {
   background: white;
   color: black;
@@ -174,23 +193,33 @@ body::after {
   <img id="main-img" src="images/black-hoodie.jpg" class="product-img">
 
   <div class="product-info">
-    <h2>Hoodie</h2>
-    <p class="price">$49</p>
 
-    <p class="desc">
-      Minimal hoodie. Clean design. Premium quality.
-    </p>
-
-    <!-- ВЫБОР ЦВЕТА -->
+    <!-- ЦВЕТА (СВЕРХУ) -->
     <div class="colors">
       <span onclick="changeColor('black')" style="background:#000"></span>
       <span onclick="changeColor('white')" style="background:#fff; border:1px solid #ccc"></span>
       <span onclick="changeColor('pink')" style="background:#ff4da6"></span>
     </div>
 
-    <br>
+    <!-- НАЗВАНИЕ -->
+    <h2>Hoodie</h2>
+
+    <p class="price">$49</p>
+
+    <!-- РАЗМЕРЫ -->
+    <div class="sizes">
+      <span>S</span>
+      <span>M</span>
+      <span>L</span>
+      <span>XL</span>
+    </div>
+
+    <p class="desc">
+      Minimal hoodie. Clean design. Premium quality.
+    </p>
 
     <a href="#" class="btn">BUY NOW</a>
+
   </div>
 
 </div>
