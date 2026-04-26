@@ -291,8 +291,8 @@ body::after {
 </section>
 
 <script>
-function changeColor(color) {
-  const img = document.getElementById("main-img");
+function changeColor(id, color) {
+  const img = document.getElementById("img" + id);
 
   if (color === "black") img.src = "black.jpg";
   if (color === "white") img.src = "white.jpg";
