@@ -166,6 +166,26 @@ body::after {
   transition: 0.2s;
 }
 
+  /* СЕТКА 2 ТОВАРА */
+.products-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+/* ЧУТЬ СДВИГАЕМ ВЛЕВО */
+.shop {
+  padding-left: 40px;
+}
+
+/* ЧТОБЫ НЕ ЛОМАЛОСЬ НА МОБИЛЕ */
+@media (max-width: 900px) {
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  
 .sizes span:hover {
   border: 1px solid white;
 }
